@@ -1,0 +1,21 @@
+{
+    "name": "Shift8/Intercept",
+    "description": "A small package to help you write more considerate PHP code.",
+    "license": "BSD",
+    "keywords": ["intercept", "intercepting filter"],
+    "authors": [
+        {
+            "name": "Tom Maiaroto",
+            "email": "tom@shift8creative.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shift8\\Intercept\\": "src"
+        }
+    }
+}
