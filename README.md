@@ -119,8 +119,9 @@ You'll just have to see it in practice and don't worry, we have examples.
 Ok, so this magic pattern sounds good by now hopefully. It's different, it uses closures in a tricky way to get it done and you 
 probably want to know how it works.
 
-Perhaps the best way to learn is by taking a look at the examples included in this library. Any class you create that extends
-```Object``` or ```StaticObject``` will allow you to make filterable methods. The magic part is:
+Perhaps the best way to learn is by taking a look at the examples included in this library. After your class extends the 
+```\Shift8\Intercept\Object``` or ```\Shift8\Intercept\StaticObject``` class the magic part in allowing your method to be 
+filterable will be:
 
 ```
 return $this->_filter(__METHOD__, $params, function($self, $params) {
@@ -147,8 +148,6 @@ return static::_filter(__FUNCTION__, $params, function($self, $params) {
 ```
 
 Then you, and anyone using your clases, can filter the methods you've exposed to be filtered.
-
-TBD
 
 ## Drawbacks
 
