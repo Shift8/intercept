@@ -1,5 +1,5 @@
 {
-    "name": "Shift8/Intercept",
+    "name": "shift8/intercept",
     "description": "A small package to help you write more considerate PHP code.",
     "license": "BSD",
     "keywords": ["intercept", "intercepting filter"],

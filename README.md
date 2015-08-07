@@ -65,6 +65,10 @@ These are commonly found in many PHP frameworks and libraries. If you're familia
 know about ```beforeFilter()``` and ```afterFilter()```. The problem with these kind of hooks is that they are called at 
 fixed points in the codebase. You don't get a lot of flexibility.
 
+Users of Drupal probably closely identify with the "hook" term as they are all over that CMS an are a little different than
+what you'll find in CakePHP. In fact, if you simply take a list of all the available hooks in Drupal you'll quickly start 
+to realize why this can be a complete maintenance nightmare.
+
 **3. Event Dispatchers**
 
 Events are very similar to hooks only instead there can be more. It's not quite as limited, but when those events are dispatched
