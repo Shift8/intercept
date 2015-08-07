@@ -3,7 +3,7 @@
  * Borrowed from Lithium: the most rad php framework
  * http://li3.me
  *
- * @copyright     Copyright 2013, Union of RAD (http://union-of-rad.org)
+ * @copyright     Copyright 2015, Shift8Creative (http://www.shift8creative.com)
  * @license       http://opensource.org/licenses/bsd-license.php The BSD License
  */
 
@@ -15,6 +15,11 @@ use Closure;
  * The `Filters` class, borrowed from the Lithium framework, is the basis of the method filtering 
  * system: an efficient way to enable event-driven communication between classes without tight 
  * coupling and without depending on a centralized publish/subscribe system.
+ *
+ * If you're familiar with Lithium, you'll know that this class relied on the `Collection` class.
+ * Intercept has no real need for collections (though it does need to iterate through a set of
+ * filters) and again Intercept aims to be minimal. So parts of Lithium's `Collection` class
+ * were pulled into this `Filters` class stritly to satify its needs.
  *
  * In your own classes, when creating a method that can be filtered, a method is implemented as a
  * [ closure](http://us2.php.net/manual/en/functions.anonymous.php) and is passed to either
